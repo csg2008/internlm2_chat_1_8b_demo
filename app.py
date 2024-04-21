@@ -4,7 +4,7 @@ import gradio as gr
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
-base_path = './internlm2-chat-1-8b'
+base_path = '/home/xlab-app-center/internlm2-chat-1-8b'
 
 if not os.path.exists(base_path):
     os.system(f'git clone https://code.openxlab.org.cn/csg2008/internlm2_chat_1_8b_demo.git {base_path}')
