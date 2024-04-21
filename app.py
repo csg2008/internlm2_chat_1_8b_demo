@@ -4,6 +4,8 @@ import gradio as gr
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
+print("gradio version: ", gr.__version__)
+
 base_path = '/home/xlab-app-center/internlm2-chat-1-8b'
 
 if not os.path.exists(base_path):
